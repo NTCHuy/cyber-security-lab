@@ -12,7 +12,7 @@ E.g: `get arp.spoof*`
 
 1. `net.probe on` - Start probing every IPs to detect those that are in use within the network.
 
-2. *(optional)* `net.show` - Show list of alive IPs. Can be extremely useful for detecting the intended target(s).
+2. *(optional)* `net.show` - Show list of alive IPs. Can be extremely useful for identifying the intended target(s).
 
 3. `set arp.spoof.targets <IP or range>` - Set target(s) to attack. Leave unset to attack hosts.
 
@@ -27,7 +27,7 @@ E.g: `get arp.spoof*`
 
 1. `net.probe on` - Start probing every IPs to detect those that are in use within the network.
 
-2. *(optional)* `net.show` - Show list of alive IPs. Can be extremely useful for detecting the intended target(s).
+2. *(optional)* `net.show` - Show list of alive IPs. Can be extremely useful for identifying the intended target(s).
 
 3. `set arp.spoof.targets <IP or range>` - Set target(s) to attack. Leave unset to attack hosts.
 
