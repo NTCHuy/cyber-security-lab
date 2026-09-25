@@ -31,7 +31,7 @@ E.g: `get arp.spoof*`
 
 3. `set arp.spoof.targets <IP or range>` - Set target(s) to attack. Leave unset to attack hosts.
 
-4. `set arp.spoof.forwarding true` - Allow intercepted packets to continue, avoid raising suspicion.
+4. `set arp.spoof.forwarding true` - Allow intercepted packets to continue, avoiding raising suspicion.
 
 5. `set arp.spoof.fullduplex true` - Spoof both the targets and the gateway.
 
