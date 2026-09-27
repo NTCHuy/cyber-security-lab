@@ -57,6 +57,6 @@ E.g: `get arp.spoof*`
 
 7. `set dns.spoof.domains <targeted domain(s)>` - Set the legitimate domain(s) to impersonate. Set to "*" to target all domains (will break many applications and websites on the targeted device).
 
-8. `set dns.spoof.address <IP>` - Set the IP that the target will be redirected to when attempting access to the above domain. Only local IPs are applicable.
+8. `set dns.spoof.address <IP>` - Set the IP that the target will be redirected to when attempting access to the above domain.
 
 9. `dns.spoof on` - Start DNS Spoofing.
